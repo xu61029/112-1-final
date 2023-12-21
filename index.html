@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>期末專題</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>密碼學小測驗</h1>
+        <button onclick="selectCategory('transposition')">換位</button>
+        <button onclick="selectCategory('substitution')">取代</button>
+        <button onclick="selectCategory('finiteField')">有限體</button>
+        <button onclick="selectCategory('AES')">AES</button>
+
+        <div id="questionArea" style="display: none;">
+            <h2 id="questionTitle"></h2>
+            <div id="questionContent"></div>
+            <div id="answers"></div>
+            <div id="result"></div>
+            <button onclick="checkAnswer()">提交答案</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
